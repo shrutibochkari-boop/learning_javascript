@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pin = "123456";
+
+        if(pin == "123456")
+        {
+            document.write("Pin is correct");
+        }
+        else 
+        {
+            document.write("Pin is incorrect");
+        }
+       
+    </script>
+    <script>
+        var fname = "Rohit";
+        var pin = "123456";
+
+        var inputname = prompt("Enter your name");
+        var inputpin = prompt("Enter your pin");
+
+        if(inputname == fname && inputpin == pin)
+        {
+            document.write("Welcome " + inputname);
+        }
+        else if(inputname == fname && inputpin != pin)
+        {
+            document.write("Pin is incorrect");
+        }
+        else if(inputname != fname && inputpin == pin)
+        {
+            document.write("Name is incorrect");
+        }
+        else
+        {
+            document.write("Name and Pin are incorrect");
+        }
+    </script>
+</body>
+</html>

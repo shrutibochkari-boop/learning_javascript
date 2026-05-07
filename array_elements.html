@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- array modify and delete -->
+     <script>
+        var a = ["Shruti", 22, "Pune", "JavaScript"];
+        document.write(a + "<br>");
+        a[1] = 25; // modify
+        document.write(a + "<br>");
+        delete a[3]; // delete
+        document.write(a + "<br>");
+     </script>
+     <!-- sorting and reversing array -->
+      <script>
+        var b = ["shruti", "rohit", "priya", "amit"];
+        document.write(b + "<br>");
+        b.sort();
+        document.write(b + "<br>");
+        b.reverse();
+        document.write(b + "<br>");
+      </script>
+
+      <script>
+        var c = ["shruti", "rohit", "priya", "amit"];
+        document.write(c + "<br>");
+        c.pop(); // remove last element
+        c.pop(); // remove last element
+        document.write(c + "<br>");
+        c.push("neha"); // add element at end
+        c.push("sneha"); // add element at end
+        document.write(c + "<br>");
+      </script>
+      <script>
+        var d = ["shruti", "rohit", "priya", "amit"];
+        document.write(d + "<br>");
+        d.shift(); // remove first element
+        document.write(d + "<br>");
+        d.unshift("neha"); // add element at beginning
+        document.write(d + "<br>");
+        </script>
+
+        <!-- concat and join array -->
+        <script>
+            var e = ["shruti", "rohit", "priya", "amit"];
+            var f = ["priya", "amit"];
+            var h = ["neha", "sneha"];
+
+            var g = e.concat(f, h); // concatenate arrays
+            document.write(g + "<br>");
+            var i = g.join(" - "); // join array elements with separator
+            document.write(i + "<br>");
+            </script>
+</body>
+</html>

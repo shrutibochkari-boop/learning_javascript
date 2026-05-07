@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = {
+            fname: "Shruti",
+            lname: "Shinde",
+            email : "shruti.shinde@example.com",
+            phone: "1234567890",
+            players: ["Sachin", "Dravid", "Laxman"],
+            address : {
+                city: "Pune",
+                state: "Maharashtra",
+                country: "India"
+            },
+            message : "Hello match is starting soon"
+        };
+        document.write("First Name: " + a.fname + " " + a.lname + " " + "email id: " + a.email + " " + "Phone: " + a.phone + " " + "Players: " + a.players + " " + "City: " + a.address.city + " " + "State: " + a.address.state + " " + "Country: " + a.address.country + " " + a.message);
+       <br></br>
+        document.write("my name is ${a.fname} ${a.lname} and my email id is ${a.email} and my phone number is ${a.phone} and my players are ${a.players} and i live in ${a.address.city}, ${a.address.state}, ${a.address.country}. ${a.message}");
+    </script>
+</body>
+</html>

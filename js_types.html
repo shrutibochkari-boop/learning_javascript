@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Inline JavaScript Example: -->
+    <button onclick="alert('This is inline example')">Click Me</button>
+
+    <!-- Internal JavaScript Example: -->
+     <button onclick="showmsg()">Click Me</button>
+
+        <!-- External JavaScript Example: -->
+        <button onclick="hello()">External click me</button>
+    <script>
+        console.log("This is console log example");
+        document.write("This is document write example <br>");
+    </script>
+    
+    <script>
+        function showmsg()
+        {
+            alert("This is internal example");
+        }
+     </script>
+     <script src="js/myscript.js"></script>
+</body>
+</html>
