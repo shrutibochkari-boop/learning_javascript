@@ -28,5 +28,32 @@
         }
         showtime();
     </script>
+
+    <p id="msg">This code creates a digital clock that updates every second. The `showtime` function retrieves the current time using the `Date` object, formats it as a locale-specific time string, and updates the content of the HTML element with the id "clock". The `setInterval` function is used to call `showtime` every 1000 milliseconds (1 second) to ensure the clock stays up to date.</p>
+     <script>
+        setTimeout(function() {
+            document.getElementById("msg").innerHTML = "hello its a timeout function";
+        }, 10000);
+     </script>
+
+     <h1>Counter</h1>
+     <h2 id="counter" class="digital_clock">0</h2>
+     <button onclick="startCounter()" style="background-color: greenyellow;" 
+     color="black">Start Counter</button>
+     <button onclick="stopCounter()" style="background-color: red;" color="black">Stop Counter</button>
+        <script>
+            let count = 0;
+           let counter = null;
+            function startCounter() {
+                counter = setInterval(function() {
+                    count++;
+                    document.getElementById("counter").innerHTML = count;
+                }, 1000);
+            }
+            function stopCounter() {
+                clearInterval(counter);
+                counter = null;
+            }           
+</script>
 </body>
 </html>

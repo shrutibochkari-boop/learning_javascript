@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>change text using dom</h1>
+    <h2 id="title">Old heading</h2>
+    <button onclick="changeText()">Change Text</button>
+    <script>
+        function changeText(){
+            document.getElementById("title").innerHTML = "New heading";
+        }
+    </script>
+    <hr>
+    <h1>change color using dom</h1>
+    <h2 id="color" style="color: red;">Red Text</h2>
+    <button onclick="changeColor()">Change Color</button>
+    <script>
+        function changeColor(){
+            document.getElementById("color").style.color = "blue";
+        }
+    </script>
+    <hr>
+    <h1>change image using dom</h1>
+    <img src="images/bird.jpg" id="myImage" alt="Bird">
+    <button onclick="changeImage()">Change Image</button>
+    <script>
+        function changeImage(){
+            document.getElementById("myImage").src ="images/tiger.jpg";
+        }
+        </script>
+</body>
+</html>
